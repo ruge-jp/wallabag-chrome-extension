@@ -63,27 +63,27 @@ jobs:
               title: `🚨 Security Vulnerabilities Detected - ${new Date().toISOString().split('T')[0]}`,
               body: `## Security Audit Report
               
-Automated security scan detected vulnerabilities that require attention.
+            Automated security scan detected vulnerabilities that require attention.
 
-### Audit Results
-\`\`\`
-${auditReport}
-\`\`\`
+            ### Audit Results
+            \`\`\`
+            ${auditReport}
+            \`\`\`
 
-### Action Required
-1. Review the vulnerabilities listed above
-2. Update affected packages: \`npm update\`
-3. Run \`npm audit fix\` for automatic fixes
-4. For manual fixes, check each package's security advisory
-5. Re-run tests after updates
-6. Close this issue once vulnerabilities are resolved
+            ### Action Required
+            1. Review the vulnerabilities listed above
+            2. Update affected packages: \`npm update\`
+            3. Run \`npm audit fix\` for automatic fixes
+            4. For manual fixes, check each package's security advisory
+            5. Re-run tests after updates
+            6. Close this issue once vulnerabilities are resolved
 
-### Priority
-- **Critical/High**: Fix within 24 hours
-- **Moderate**: Fix within 1 week
-- **Low**: Fix in next maintenance cycle
+            ### Priority
+            - **Critical/High**: Fix within 24 hours
+            - **Moderate**: Fix within 1 week
+            - **Low**: Fix in next maintenance cycle
 
-/cc @${context.actor}`,
+            /cc @${context.actor}`,
               labels: ['security', 'automated', 'high-priority']
             });
             
