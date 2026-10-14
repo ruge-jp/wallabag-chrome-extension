@@ -35,7 +35,7 @@ jobs:
       run: npm run package
     
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v7
       with:
         name: extension-package
         path: web-ext-artifacts/
